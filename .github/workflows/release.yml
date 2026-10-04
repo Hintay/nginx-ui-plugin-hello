@@ -1,0 +1,28 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions: {}
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    environment: release
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - run: ./build.sh
+
+      - uses: nginxui/plugin-release@v1
+        with:
+          signing-key: ${{ secrets.PLUGIN_SIGNING_KEY }}
+          signing-key-password: ${{ secrets.PLUGIN_SIGNING_KEY_PASSWORD }}
+          trusted-key: ${{ vars.PLUGIN_TRUSTED_KEY }}
+          notes: generate
+          publish: true

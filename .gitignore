@@ -1,0 +1,3 @@
+dist/
+# Keys from nginx-ui plugin key init never go into the repository.
+*.key
