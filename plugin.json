@@ -1,13 +1,17 @@
 {
   "id": "io.github.hintay.hello",
   "name": "Hello Templates",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "api_version": 1,
   "description": "A test plugin with one configuration template. It exists to test the plugin catalog and the developer portal.",
   "i18n": {
     "zh_CN": {
       "name": "Hello 模板",
       "description": "只包含一个配置模板的测试插件，用于测试插件目录和开发者中心。"
+    },
+    "zh_TW": {
+      "name": "Hello 範本",
+      "description": "只包含一個設定範本的測試外掛，用於測試外掛目錄和開發者中心。"
     }
   },
   "content": {
