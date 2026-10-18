@@ -15,6 +15,7 @@
     "fr_FR": "Un plugin de test avec un modèle de configuration. Il sert à tester le catalogue des plugins et le portail des développeurs.",
     "es": "Un plugin de prueba con una plantilla de configuración.",
     "ko_KR": "설정 템플릿 하나를 담은 테스트 플러그인입니다.",
-    "zh_TW": "只包含一個設定範本的測試外掛，用於測試外掛目錄和開發者中心。"
+    "zh_TW": "只包含一個設定範本的測試外掛，用於測試外掛目錄和開發者中心。",
+    "ja_JP": "設定テンプレートを一つだけ含むテストプラグインです。"
   }
 }
